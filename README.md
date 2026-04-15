@@ -1,6 +1,4 @@
-# Desenvolvimento-de-APIs-com-Node.js-
-
-# 📝 API To-Do List (Node.js Vanilla)
+# API To-Do List (Node.js Vanilla)
 
 ## Descrição do projeto
 Uma API RESTful básica para gerenciamento de tarefas (To-Do List) construída puramente com Node.js, sem a utilização de frameworks externos como o Express. O objetivo deste projeto é fornecer operações de CRUD (Criar, Ler, Atualizar e Deletar) para tarefas, demonstrando os fundamentos do protocolo HTTP, roteamento manual e manipulação de fluxos de dados (streams) no ambiente Node.
@@ -73,4 +71,5 @@ Para resolver o desafio de criar uma API organizada e escalável sem o uso de bi
 * **Deletar Tarefa**
   * `DELETE /tasks/:id` *(Substitua `:id` pelo número da tarefa)*
   * Deleta a tarefa do sistema.
-```
+
+ *
