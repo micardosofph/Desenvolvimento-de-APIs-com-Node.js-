@@ -35,7 +35,7 @@ const listTasks = (req, res) => {
 // Atualizar tarefa
 const updateTask = async (req, res, id) => {
   const body = await getRequestBody(req);
-  const task = taskService.updateTask(id, body.title);
+  const task = taskService.updateTask(id, body);
   if (!task) {
     res.statusCode = 404;
     return res.end(JSON.stringify({ message: "Não encontrada" }));
@@ -50,7 +50,7 @@ const deleteTask = (req, res, id) => {
     return res.end(JSON.stringify({ message: 'Não encontrada' }
     ));
   }
-  res.end(JSON.stringify({ message: 'Removida' }));
+  res.end(JSON.stringify({ message: 'Tarefa apagada com sucesso' }));
 };
 
 module.exports = {
